@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="img/">
+    <title>Cách bố trí layout</title>
+    <style>
+        header{
+            padding: 6px;
+            text-align: center;
+            background-color: lightblue;
+        }
+        nav{
+            text-align: center;
+        }
+
+        ul li{
+            display: inline;
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .contain{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        section{
+            padding: 5px;
+            border: dashed 3px #0026ff;
+            width: 70%;
+            margin-top: 0px;
+        }
+        article{
+            padding: 5px;
+            border: dotted 3px #ff006e;
+            margin-top: auto;
+        }
+        
+        aside{
+            width: 30%;
+        }
+        aside img{
+            width: 100%;
+        }
+       
+
+        footer{
+            padding: 5px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Đại học mỏ địa chất</h1>
+        <h2>Khoa CNTT</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Tuyển sinh</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Tin tức</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contain">
+        <section>
+            <h1>Bài viết</h1>
+            <article>
+                <h1>Thông tin về khoa công nghệ thông tin</h1>
+                <p>Khoa công nghê thông tin thành lập năm 2002</p>
+            </article>
+            <article>
+                <h1>Tổ chức khoa công nghệ thông tin</h1>
+                <p>Khoa công nghê thông tin gồm 7 bộ môn</p>
+            </article>
+            <article>
+                <h1>Hoạt động nghiên cứu khoa học</h1>
+                <p>Hiện nay...</p>
+            </article>
+        </section>
+        <aside>
+            <img src="img/122924232_2796686557250072_6329540149017873033_n.jpg" alt="">
+        </aside>
+    </div>
+
+    <footer>
+        <hr />
+        Địa chỉ: Phố viên, Cổ Nhuế, Nam Từ Liêm, Hà Nội
+
+    </footer>
+</body>
+
+</html>
